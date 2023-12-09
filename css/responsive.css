@@ -1,0 +1,129 @@
+@media screen and (min-width:992px) and (max-width:1199px) {
+    
+    .title_txt{
+        font-size: 45px;
+    }
+    .banner-men{
+        width: 20%;
+        right: 80px;
+        top: 80px;
+    }
+    .wave_line{
+        width: 175px;
+    }
+    .slidebar_list{
+        top: 150px;
+    }
+
+}
+@media screen and (max-width:991px) {
+    
+    body{
+        font-family: var(--fontJost);
+        line-height: 28px;
+        background-color: var(--white);
+    }
+    .mobile_menu{
+        position: absolute;
+        background-color: var(--white);
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+        z-index: 999;
+    }
+    .main_menu li a.active::before,
+    .main_menu li a:hover::before{
+        display: none;
+    }
+    .side_icon a{
+        height: 40px;
+        width: 40px;
+        line-height: 45px;
+    }
+    .title_txt{
+        font-size: 32px;
+    }
+    .txt_img{
+        width: 145px;
+        height: 61px;
+        background-size: cover;
+    }
+    .banner-girl{
+        width: 20%;
+        position: static;
+    }
+    .banner-men{
+        width: 20%;
+        right: 80px;
+        top: 80px;
+        position: static;
+    }
+    .wave_line{
+        width: 130px;
+    }
+    .slidebar_list{
+        top: 0;
+    }
+    .single_pro{
+        border: none !important;
+        border-bottom: 1px var(--themeOrange) solid !important;
+        padding: 50px;
+
+    }
+    .sec_title p.h1{
+        font-size: 30px;
+    }
+    .sec_title p.sub_title{
+        font-size: 16px;
+        width: 75%;
+    }
+    .sec_title::before,
+    .sec_title::after{
+        display: none;
+    }
+    .sec_discount{
+        background-color: var(--themeBg);
+    }
+    .discount_side_img{
+        left: 0;   
+        text-align: center;
+        z-index: 0;
+    }
+    .discount_side_img img{
+        width: 70% !important; 
+        margin: 0 auto;
+    }
+    .explore{
+        margin-left: 20px
+    }
+
+
+}
+
+@media screen and (max-width:575px) {
+    .spacer{
+        padding: 40px 0;
+    }
+    .main_revamp{
+        margin-top: 50px;
+    }
+    .banner_sidebar li a{
+        font-size: 16px;
+    }
+    .offer-img{
+        margin-top: 30px;
+        width: 60% !important;
+    }
+    .why_choose_img{
+        margin-top: 50px;
+    }
+    .why_choose_img::after{
+        top: 0;
+        right: 10px;
+    }
+    .why_choose_img::before{
+        top: 30%;
+        left: 20px;
+    }
+}
