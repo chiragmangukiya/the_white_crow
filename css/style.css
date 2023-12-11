@@ -106,6 +106,9 @@ h1,h2,h3,h4,h5,h6,p{
 .bg-black{
     background-color: var(--txtBlack);
 }
+.bg-orange{
+    background-color: var(--themeOrange);
+}
 
 /* Start Header */
 
@@ -519,6 +522,43 @@ h1,h2,h3,h4,h5,h6,p{
 .client_story{
     background: linear-gradient(103deg, rgba(255, 192, 178, 0.15) 2.97%, rgba(232, 106, 86, 0.15) 99.3%);
 }
+.client_circle{
+    left: 37%;
+}
+.comma_icon{
+    width: 10% !important;
+}
+.client_explore
+{
+    background-color:#FDE6E0;
+}
+.bg_box{
+    background: linear-gradient(280deg, rgba(232, 106, 86, 0.30) 6.58%, rgba(255, 189, 175, 0.30) 81.63%);
+    width: 100%;
+    height: 250px;
+}
+.client_info{
+    position: relative;
+    top: -150px;
+    left: 50px;
+    text-align: center;
+}
+.client_img{
+    height: 292px;
+    width: 190px;
+    border-radius: 0 0 95px 95px;
+    overflow: hidden;    
+    border-bottom: 5px var(--themeOrange) solid;
+}
+.client_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.client_men{
+    position: absolute;
+    bottom: 0;
+}
 
 /* Client Logo */
 .logo_box{
@@ -590,6 +630,7 @@ footer{
         left: 50%;
         translate: -50% -50%;
         rotate: -20deg;
+        -webkit-rotate: -20deg;
     }
 }
 .visit_store svg{

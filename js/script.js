@@ -55,6 +55,15 @@ $(document).ready(function(){
       }
   })
 
+  $('#testimonial').owlCarousel({
+      loop:true,
+      nav:false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      smartSpeed:1000,
+      items:1
+  })
+
 })
 
 //-------------------------- End Client Logo----------------------------
