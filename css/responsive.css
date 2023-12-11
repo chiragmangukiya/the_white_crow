@@ -190,4 +190,30 @@
     .info_title{
         margin-bottom: 30px;
     }
+    .our_client_title{
+        position: static;
+    }
+    #testimonial .owl-stage-outer{
+        padding-top: 0px;
+    }
+    .client_img{
+        width: 124px;
+        height: 184px;
+    }
+    .client_info{
+        top: -50px;
+        left: 15px;
+    }
+    .client_men{
+        right: -130px;
+    }
+    .client_men img{
+        width: 65% !important;
+    }
+    .see_all{
+        display: none;
+    }
+    .left_client_box{
+        margin-top: 100px;
+    }
 }

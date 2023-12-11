@@ -15,6 +15,9 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="css/all.min.css">
 
+    <!-- animate -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -390,8 +393,8 @@
 
         <!-- Our Client Story -->
         <section class="client_story spacer">
-            <div class="container">
-                <div class="col-lg-6 ms-auto">
+            <div class="container-fluid position-relative">
+                <div class="col-lg-6 ms-auto our_client_title">
                     <div class="sec_title text-start">
                         <svg xmlns="http://www.w3.org/2000/svg" width="57" height="25" viewBox="0 0 57 25" fill="none">
                             <ellipse cx="13.3712" cy="12.5" rx="12.4982" ry="12.5" fill="#FFA28E"/>
@@ -404,46 +407,110 @@
                         </p>                    
                     </div>
                 </div> 
-                <div class="row">
-                    <div class="col-6 position-relative">
-                        
-                        <div class="bg_box d-flex position-relative">
-                            <div class="client_info d-inline-block">
-                                <div class="client_img">
-                                    <img src="image/profile.png" alt="">
+                <div class="row position-relative">                   
+                    <div class="owl-carousel owl-theme px-0" id="testimonial">
+                        <div class="item" data-dot="<button>01</button>">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-lg-5 col-12 position-relative ps-0 order-lg-0 order-1 left_client_box">                        
+                                    <div class="bg_box d-flex position-relative">
+                                        <div class="client_info d-inline-block">
+                                            <div class="client_img">
+                                                <img src="image/profile.png" alt="">
+                                            </div>
+                                            <div class="client_name mt-3">
+                                                <p class="fw-bold lh-base">Jenny Willson 111</p>
+                                                <p class="text-muted lh-base">Marketing Coordinator</p>
+                                            </div>
+                                        </div>
+                                        <div class="client_men">
+                                            <img src="image/client_men.png" alt="">
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="client_name mt-3">
-                                    <p class="fw-bold lh-base">Jenny Willson</p>
-                                    <p class="text-muted lh-base">Marketing Coordinator</p>
+                                <div class="col-lg-5 col-12 order-lg-1 order-0 mx-auto ps-0 position-relative">
+                                    <img src="image/comma.svg" class="comma_icon" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate mollitia libero similique ut architecto, voluptatibus sunt voluptas? Sit perferendis eos eligendi illum saepe ipsam nemo qui veniam nobis dolorem!
+                                    </p>
+                                    <div class="pt-lg-5 pt-3 d-flex align-items-center justify-content-between">
+                                        <div class="client_name">
+                                            <p class="fw-bold lh-base">Jenny Willson 111</p>
+                                            <p class="text-muted lh-base">Marketing Coordinator</p>
+                                        </div>                                    
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="client_men">
-                                <img src="image/client_men.png" alt="">
                             </div>
                         </div>
-
+                        <div class="item" data-dot="<button>02</button>">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-lg-5 col-12 position-relative ps-0 order-lg-0 order-1 left_client_box">                        
+                                    <div class="bg_box d-flex position-relative">
+                                        <div class="client_info d-inline-block">
+                                            <div class="client_img">
+                                                <img src="image/profile.png" alt="">
+                                            </div>
+                                            <div class="client_name mt-3">
+                                                <p class="fw-bold lh-base">Jenny Willson 222</p>
+                                                <p class="text-muted lh-base">Marketing Coordinator</p>
+                                            </div>
+                                        </div>
+                                        <div class="client_men">
+                                            <img src="image/client_men.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12 order-lg-1 order-0 mx-auto ps-0 position-relative">
+                                    <img src="image/comma.svg" class="comma_icon" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate mollitia libero similique ut architecto, voluptatibus sunt voluptas? Sit perferendis eos eligendi illum saepe ipsam nemo qui veniam nobis dolorem!
+                                    </p>
+                                    <div class="pt-lg-5 pt-3 d-flex align-items-center justify-content-between">
+                                        <div class="client_name">
+                                            <p class="fw-bold lh-base">Jenny Willson 222</p>
+                                            <p class="text-muted lh-base">Marketing Coordinator</p>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item" data-dot="<button>03</button>">
+                            <div class="row g-0 align-items-center">
+                                <div class="col-lg-5 col-12 position-relative ps-0 order-lg-0 order-1 left_client_box">                        
+                                    <div class="bg_box d-flex position-relative">
+                                        <div class="client_info d-inline-block">
+                                            <div class="client_img">
+                                                <img src="image/profile.png" alt="">
+                                            </div>
+                                            <div class="client_name mt-3">
+                                                <p class="fw-bold lh-base">Jenny Willson 333</p>
+                                                <p class="text-muted lh-base">Marketing Coordinator</p>
+                                            </div>
+                                        </div>
+                                        <div class="client_men">
+                                            <img src="image/client_men.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-12 order-lg-1 order-0 mx-auto ps-0 position-relative">
+                                    <img src="image/comma.svg" class="comma_icon" alt="">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate mollitia libero similique ut architecto, voluptatibus sunt voluptas? Sit perferendis eos eligendi illum saepe ipsam nemo qui veniam nobis dolorem!
+                                    </p>
+                                    <div class="pt-lg-5 pt-3 d-flex align-items-center justify-content-between">
+                                        <div class="client_name">
+                                            <p class="fw-bold lh-base">Jenny Willson 333</p>
+                                            <p class="text-muted lh-base">Marketing Coordinator</p>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <div class="owl-carousel owl-theme" id="testimonial">
-                            <div class="item px-3">
-                                <img src="image/comma.svg" class="comma_icon" alt="">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum voluptate mollitia libero similique ut architecto, voluptatibus sunt voluptas? Sit perferendis eos eligendi illum saepe ipsam nemo qui veniam nobis dolorem!
-                                </p>
-                                <div class="pt-5 d-flex align-items-center justify-content-between">
-                                    <div class="client_name">
-                                        <p class="fw-bold lh-base">Jenny Willson</p>
-                                        <p class="text-muted lh-base">Marketing Coordinator</p>
-                                    </div>
-                                    <div class="explore my-5">
-                                        <a href="#" class="explore_btn d-flex align-items-center">
-                                            <span class="explore_circle"><i class="fas fa-angles-right"></i></span>
-                                            <span class="explore_text client_explore">See All</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="explore see_all">
+                        <a href="#" class="explore_btn d-flex align-items-center">
+                            <span class="explore_circle"><i class="fas fa-angles-right"></i></span>
+                            <span class="explore_text client_explore">See All</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -560,11 +627,11 @@
 
             <div class="foot_extra_info py-5">
                 <div class="row align-items-center">
-                    <div class="col-md-6">
+                    <div class="col-md-5">
                         <p class="info_title">If you didn’t find the products
                             you are interested in or have questions?</p>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-5 ms-auto">
                         <p class="fw-bold mb-2 text-black fs-5">Just send us your contact email and we will contact you.</p>
                         <form class="position-relative">
                             <input type="text" class="rounded-2 p-3 txt_box " placeholder="Enter your email address">

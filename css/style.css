@@ -521,6 +521,7 @@ h1,h2,h3,h4,h5,h6,p{
 /* Our Client Story */
 .client_story{
     background: linear-gradient(103deg, rgba(255, 192, 178, 0.15) 2.97%, rgba(232, 106, 86, 0.15) 99.3%);
+    padding-bottom: 150px;
 }
 .client_circle{
     left: 37%;
@@ -540,7 +541,7 @@ h1,h2,h3,h4,h5,h6,p{
 .client_info{
     position: relative;
     top: -150px;
-    left: 50px;
+    left: 120px;
     text-align: center;
 }
 .client_img{
@@ -558,6 +559,44 @@ h1,h2,h3,h4,h5,h6,p{
 .client_men{
     position: absolute;
     bottom: 0;
+    right: -68px;
+}
+.client_men img{
+    width: 85%;
+}
+.see_all{
+    position: absolute;
+    right: 120px;
+    bottom: 30px;
+    width: auto;
+}
+#testimonial .owl-stage-outer{
+    padding-top: 323px;
+}
+.our_client_title{
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+#testimonial .owl-dots{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    translate: -50% 0;
+}
+#testimonial .owl-dots .owl-dot button{
+    background-color: var(--txtBlack);
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: white;
+    margin: 5px;
+}
+#testimonial .owl-dots .owl-dot.active button{
+    /* color: white; */
+    background-color: var(--themeOrange);
 }
 
 /* Client Logo */

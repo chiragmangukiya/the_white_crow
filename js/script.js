@@ -61,7 +61,12 @@ $(document).ready(function(){
       autoplay:true,
       autoplayTimeout:3000,
       smartSpeed:1000,
-      items:1
+      items:1,
+      animateIn:'animate__fadeIn',
+      animateOut:'animate__fadeOut',
+      dotsData:true,
+      touchDrag:false,
+      mouseDrag:false
   })
 
 })
