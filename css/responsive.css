@@ -196,6 +196,9 @@
     #testimonial .owl-stage-outer{
         padding-top: 0px;
     }
+    .client_story {
+        padding-bottom: 100px;
+    }
     .client_img{
         width: 124px;
         height: 184px;
