@@ -159,4 +159,35 @@
     .news_submit{
         padding: 10px 15px;
     }
+    .main_footer{
+        text-align: center;
+    }
+    .foot_menu{
+        display: block;
+    }
+    .dark_footer{
+        margin: 15px;
+    }
+    .visit_store{
+        margin-top: 100px;
+    }
+    .social_icon{
+        margin-bottom: 20px;
+    }
+    .contact_sec{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact_info ul{
+        flex-direction: column;
+    }
+    .contact_info ul li{
+        margin-left: 0;
+    }
+    .foot_extra_info{
+        text-align: left;
+    }
+    .info_title{
+        margin-bottom: 30px;
+    }
 }

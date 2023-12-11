@@ -558,3 +558,95 @@ h1,h2,h3,h4,h5,h6,p{
         border: none;
     }
 }
+
+/* footer */
+footer{
+    background-image: url('../image/footer_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.foot_menu a{
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 3px;
+    &:hover, &.active{
+        color: var(--themeOrange);
+    }
+}
+.visit_store{
+    font-family: var(--fontDown);
+    font-size: 14px;
+    position: relative;
+    margin-top: 50px;
+    &::before{
+        content: '';
+        height: 168px;
+        width: 250px;
+        border-radius: 50%;
+        border: 1px var(--themeOrange) solid;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        rotate: -20deg;
+    }
+}
+.visit_store svg{
+    scale: 0.7;
+}
+
+.social_icon a{
+    height: 40px;    
+    width: 40px;    
+    background-color: #272626;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px;
+    transition: .3s;
+    &:hover{
+        background-color: var(--themeOrange);
+    }
+}
+
+.contact_sec{
+    margin-top: 100px;
+    
+    border-bottom: 1px #5A5A5A solid;
+}
+.contact_info ul li{
+    margin-left: 50px;
+    color: white;
+}
+.contact_info ul li i{
+    color: var(--themeOrange);
+}
+.city_name{
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+    word-spacing: 10px;
+}
+.info_title{
+    font-family: var(--fontDown);
+    font-size: 24px;
+    color: #1C0906;
+    line-height: 39px;
+    font-weight: 700;
+}
+.foot_txt{
+    content: '@';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    translate: 0 -50%;
+    font-size: 30px;
+}
+.foot_extra_info{
+    border-bottom: 1px white solid;
+}
