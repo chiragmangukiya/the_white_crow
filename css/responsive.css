@@ -37,9 +37,10 @@
         display: none;
     }
     .side_icon a{
-        height: 40px;
-        width: 40px;
-        line-height: 45px;
+        height: 30px;
+        width: 30px;
+        line-height: 33px;
+        font-size: 14px;
     }
     .title_txt{
         font-size: 32px;
@@ -68,7 +69,7 @@
     .single_pro{
         border: none !important;
         border-bottom: 1px var(--themeOrange) solid !important;
-        padding: 50px;
+        /* padding: 50px; */
 
     }
     .sec_title p.h1{
@@ -105,6 +106,12 @@
     .spacer{
         padding: 40px 0;
     }
+    .navbar-toggler{
+        padding: 5px;
+    }
+    .wave_line{
+        width: 120px;
+    }
     .main_revamp{
         margin-top: 50px;
     }
@@ -114,6 +121,9 @@
     .offer-img{
         margin-top: 30px;
         width: 60% !important;
+    }
+    .single_pro{
+        padding: 50px 30px;
     }
     .why_choose_img{
         margin-top: 50px;
@@ -125,5 +135,28 @@
     .why_choose_img::before{
         top: 30%;
         left: 20px;
+    }
+    .time_counter{
+        font-size: 20px;
+    }
+    .time_label{
+        margin: 3px;
+    }
+    .logo_box{
+        width: 90% !important;
+        top: -50px;
+    }
+    .input_element{
+        width: 100%;
+    }
+    .main_revamp .sec_title::before,
+    .main_revamp .sec_title::after{
+        display: none;
+    }
+    .txt_box{
+        padding: 15px;
+    }
+    .news_submit{
+        padding: 10px 15px;
     }
 }
