@@ -219,4 +219,14 @@
     .left_client_box{
         margin-top: 100px;
     }
+
+    /* category page */
+
+    .product_tab{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
 }

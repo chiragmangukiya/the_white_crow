@@ -69,6 +69,7 @@ $(document).ready(function(){
       mouseDrag:false
   })
 
+
 })
 
 //-------------------------- End Client Logo----------------------------

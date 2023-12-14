@@ -286,7 +286,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 20px;
     line-height: normal;
     letter-spacing: 0.2px;
-    width: 50%;
+    width: 60%;
     margin: auto;
 }
 .single_pro{
@@ -729,4 +729,82 @@ footer{
 }
 .foot_extra_info{
     border-bottom: 1px white solid;
+}
+
+/* ----------------------------Categories page ---------------------------*/
+
+.bread_title{
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    translate: 0 -50%;
+}
+.bread_title p{
+    font-family: var(--fontDown);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.breadcrumb-item a{
+    color: #000;
+}
+.breadcrumb-item.active a{
+    color: var(--themeOrange);
+}
+
+/* feature product */
+
+.product_tab{
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+.product_tab .nav-link{
+    color: #000;
+    padding: 10px 20px;
+}
+.product_tab .nav-link.active{
+    color: white;
+    background-color: var(--themeOrange);
+}
+.cate_single_pro{
+    position: relative;
+    margin: 30px 0;
+}
+.cate_pro_img{
+    height: 450px;
+}
+.cate_pro_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.cate_name_btn{
+    padding: 15px 20px;
+    border: 2px white solid;
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: #000;
+    color: white;
+    z-index: 1;
+    width: 80%;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        background-color: var(--themeOrange);
+    }
+}
+
+.breadcrumb_tag{
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    rotate: -7.5deg;
+    scale: 1.1;
+    border: 10px #FFFAF6 solid
 }
