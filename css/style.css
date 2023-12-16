@@ -109,6 +109,11 @@ h1,h2,h3,h4,h5,h6,p{
 .bg-orange{
     background-color: var(--themeOrange);
 }
+.img-fit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* Start Header */
 
@@ -735,7 +740,7 @@ footer{
 
 .bread_title{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 110px;
     translate: 0 -50%;
 }
@@ -807,4 +812,113 @@ footer{
     rotate: -7.5deg;
     scale: 1.1;
     border: 10px #FFFAF6 solid
+}
+
+/* -----------------------About Page-------------------- */
+.about_text{
+    padding: 20px 20px 20px 40px;
+    border-left: 4px var(--themeOrange) solid;
+    color: white;
+}
+.about_center_img{
+    height: 420px;
+    padding-left: 50px;
+}
+.about_center_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.left_round_img{
+    position: absolute;
+    top: -330px;
+}
+
+#counter{
+    color: white;
+    text-align: center;
+}
+#counter div:nth-child(2) .count.percent::after,
+#counter div:nth-child(3) .count.percent::after{
+    content: 'K+';
+}
+#counter div:nth-child(4) .count.percent::after{
+    content: 'M+';
+}
+#counter .count.percent{
+    color: var(--themeOrange);
+    font-family: var(--fontDown);
+    font-weight: bold;
+}
+#gallery .owl-stage .owl-stage-outer{
+    height: 400px;
+}
+#gallery .owl-stage{
+    display: flex;
+    height: 400px;
+    align-items: center;
+}
+#gallery .owl-item{
+    position: relative;
+    left: 100px;
+}
+#gallery .owl-item.active:nth-child(odd) .item{
+    scale: 1.3;
+    position: relative;
+    z-index: 10;
+    transition: .3s;
+}
+#gallery .owl-item .item{
+    position: relative;
+    z-index: 0;
+    transition: .3s;
+}
+
+/* -------------------------Trending---------------------- */
+
+.img_text{
+    box-sizing: border-box;
+    padding: 30px 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.collection_product{
+    background-image: url('../image/collection_shape.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+.single_collection .collection_img{
+    overflow: hidden;
+    height: 450px;
+    transition: .3s;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+}
+.single_collection:hover .collection_img{
+    background-color: var(--themeOrange);
+    transform: scale(1.1);
+    width: 80%;
+}
+
+.single_collection .collection_img>img{
+    transition: .3s;
+}
+.single_collection:hover .collection_img>img{
+    filter: grayscale(100%);
+}
+.single_collection .img_text{
+    transition: .3s;
+}
+.single_collection:hover .img_text{
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
 }

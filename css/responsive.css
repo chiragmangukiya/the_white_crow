@@ -229,4 +229,60 @@
         justify-content: flex-start;
         white-space: nowrap;
     }
+    .bread_title{
+        top: 100px;
+        left: 50%;
+        translate: -50% 0;
+    }
+    .bread_title .breadcrumb
+    {
+        justify-content: center;
+    }
+
+    .title_dots{
+        margin: 0 auto;
+    }
+    .title_line{
+        display: block;
+        position: relative;
+        left: 0;
+        bottom: 0px;
+        margin: 0px auto -20px;
+    }
+    .about_content{
+        margin: 0 20px 0;
+    }
+    .about_content .about_text{
+        margin-bottom: 50px;
+    }
+    #counter .count.percent{
+        font-size: 45px;
+    }
+    .about_center_img{
+        padding: 0;
+    }
+    .wear_lable{
+        right: -50px;
+        top: 100px;
+    }
+    .left_round_img{
+        position: static;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .multi_brand_img{
+        padding: 40px 0 !important;
+    }
+    #gallery .owl-stage .owl-stage-outer{
+        height: 200px;
+    }
+    #gallery .owl-stage{
+        display: flex;
+        height: 200px;
+        align-items: center;
+    }
+    #gallery .owl-item{
+        position: relative;
+        left: 0;
+    }
 }

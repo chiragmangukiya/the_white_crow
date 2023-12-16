@@ -69,7 +69,65 @@ $(document).ready(function(){
       mouseDrag:false
   })
 
+  $('#gallery').owlCarousel({
+      loop:true,
+      nav:false,
+      autoplay:true,
+      autoplayTimeout:3000,
+      smartSpeed:1000,      
+      dots:false,
+      touchDrag:true,
+      mouseDrag:true,
+      center:true,
+      responsive:{
+        0:{
+          items:4
+        },
+        1000:{
+          items:6
+        }
+      }
+  })
+
+
 
 })
 
 //-------------------------- End Client Logo----------------------------
+
+$(document).ready(function(){
+
+  var counted = 0;
+  $(window).scroll(function() {
+
+    var oTop = $('#counter').offset().top - window.innerHeight;
+    if (counted == 0 && $(window).scrollTop() > oTop) {
+      $('.count').each(function() {
+        var $this = $(this),
+          countTo = $this.attr('data-count');
+        $({
+          countNum: $this.text()
+        }).animate({
+            countNum: countTo
+          },
+
+          {
+
+            duration: 2000,
+            easing: 'swing',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+              //alert('finished');
+            }
+
+          });
+      });
+      counted = 1;
+    }
+
+  });
+
+})
