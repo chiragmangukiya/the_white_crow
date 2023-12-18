@@ -109,6 +109,12 @@ h1,h2,h3,h4,h5,h6,p{
 .bg-orange{
     background-color: var(--themeOrange);
 }
+.text-orange{
+    color: var(--themeOrange);
+}
+.font-downey{
+    font-family: var(--fontDown);
+}
 .img-fit{
     width: 100%;
     height: 100%;
@@ -921,4 +927,108 @@ footer{
 .single_collection:hover .img_text{
     background-color: rgba(255, 255, 255, .2);
     backdrop-filter: blur(5px);
+}
+
+.handbags_accessories{
+    background-image: linear-gradient(103deg, rgba(255, 192, 178, 0.15) 2.97%, rgba(232, 106, 86, 0.15) 99.3%);
+    
+}
+.handbags_bg_img{
+    background-image: url('../image/handbag_left_top.png'), 
+                      url('../image/handbag_right_bottom.png'), 
+                      url('../image/handbag_right2.png');
+    background-repeat: no-repeat;
+    background-size: 15%, 10%, 10%;
+    background-position: -50px 30%, right bottom, right 70%;
+}
+
+.single_trend_pro{
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    padding: 0 20px;
+}
+.single_trend_pro .trend_img{
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    right: 50px;
+    height: 340px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.trend_title{
+    padding: 170px 20px 20px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: var(--fontDown);
+    font-weight: bold;
+}
+.trend_title a{
+    width: 80%;
+    margin: 0 auto;
+}
+.trend_bg_1{
+    background: #FFE1D5;
+}
+.trend_bg_2{
+    background: #F5F5B7;
+}
+.trend_bg_3{
+    background: #DBEEFB;
+}
+.single_trend_pro .trend_img>img{
+    transition: .3s;
+}
+.single_trend_pro:hover .trend_img>img{
+    transform: scale(1.1);
+}
+
+/* ------------------trends detail--------------- */
+
+.trends_img{
+    margin: 30px 50px;
+    text-align: center;
+    position: relative;
+}
+.trends_img::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #FFE1D5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: scale(1.1) rotate(0deg);
+    transition: .3s;
+    border-radius: 5px;
+}
+.single_trends:hover .trends_img::before{
+    transform: scale(1.1) rotate(8deg);
+    background-color: var(--themeOrange);
+}
+.single_trends .trends_img>img{
+    transition: .3s;
+    border: 7px transparent solid;
+}
+.single_trends:hover .trends_img>img{
+    transform: rotate(-8deg) scale(1.1);
+    border-color: white;
+}
+
+/* --------------------------Customize------------------------- */
+
+.customize .sec_title h1{
+    font-family: var(--fontDown);
+    font-size: 32px;
+    font-weight: bold;
+    width: 87%;
+    margin: 0 auto;
+}
+.customize_wave_line{
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
 }

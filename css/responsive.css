@@ -285,4 +285,20 @@
         position: relative;
         left: 0;
     }
+    .handbags_bg_img{
+        background-image: url('../image/handbag_left_top.png'), 
+                          url('../image/handbag_right_bottom.png'), 
+                          url('../image/handbag_right2.png');
+        background-repeat: no-repeat;
+        background-size: 80%, 60%, 30%;
+        background-position: 0px 18%, right bottom, right 91%;
+        padding-bottom: 400px;
+    }
+    .handbags_bg_img .sec_title{
+        margin-bottom: 250px;
+    }
+
+    .trends_img{
+        margin: 10px 30px;
+    }
 }
