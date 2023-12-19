@@ -310,6 +310,7 @@
     }
     .all_map_location{
         text-align: center;
+        margin-top: 0 !important;
     }
     .location{
         position: static;
