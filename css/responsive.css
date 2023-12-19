@@ -301,4 +301,11 @@
     .trends_img{
         margin: 10px 30px;
     }
+    .customize .sec_title h1{
+        font-size: 30px;
+    }
+    .customize_divider{
+        scale: 2;
+        padding-bottom: 50px;
+    }
 }

@@ -80,7 +80,7 @@ body{
     font-family: var(--fontJost);
     line-height: 28px;
     background-color: var(--themeBg);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 a{
     text-decoration: none;
@@ -1031,4 +1031,25 @@ footer{
     left: 50%;
     bottom: -15px;
     transform: translateX(-50%);
+}
+
+/* ---------------------Contact Us-------------------------- */
+
+.call_icon{
+    height: 40px;
+    width: 40px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.contact_form input, .contact_form textarea{
+    background-color: transparent;
+    border: 0.5px solid #555;
+    border-radius: 0;
+    padding: 20px;
+    resize: none;
 }
