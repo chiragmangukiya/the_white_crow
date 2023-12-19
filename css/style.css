@@ -1050,6 +1050,79 @@ footer{
     background-color: transparent;
     border: 0.5px solid #555;
     border-radius: 0;
-    padding: 20px;
+    padding: 25px;
     resize: none;
+    &:focus{
+        border-color: initial;
+        box-shadow: none;
+        background-color: transparent;
+    }
+}
+.close_note{
+    padding: 15px;
+    background: var(--2, linear-gradient(64deg, rgba(232, 106, 86,0.3), rgba(255, 126, 46,0.3)));
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.location_icon{
+    height: 40px;
+    width: 40px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--themeOrange);
+    border-radius: 50%;
+    font-size: 20px;
+}
+.location{
+    position: absolute;
+}
+.location-1{
+    top: 0;
+    left: 12%;
+}
+.location-2{
+    top: -70px;
+    left: 30%;
+}
+.location-3{
+    top: 0px;
+    right: 7%;
+}
+.location-4{
+    top: 210px;
+    left: 12%;
+}
+.location-5{
+    top: 100px;
+    left: 41%;
+}
+.location-6{
+    top: 208px;
+    right: 11%;
+}
+.location-7{
+    bottom: 230px;
+    left: 19%;
+}
+.location-8{
+    bottom: 300px;
+    left: 50%;
+}
+.location-9{
+    bottom: 0px;
+    left: 17%;
+}
+.location-10{
+    bottom: 120px;
+    left: 44%;
+}
+.location-11{
+    bottom:148px;
+    right: 5%;
 }
