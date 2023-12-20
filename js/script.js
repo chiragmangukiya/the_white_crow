@@ -114,10 +114,10 @@ var x = setInterval(function() {
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Display the result in the element with id="demo"
-  // document.getElementById("days").innerHTML = days + " <span class='time_label'>Days</span>";
-  // document.getElementById("hour").innerHTML =  hours + " <span class='time_label'>Hours</span>";
-  // document.getElementById("minute").innerHTML = minutes + " <span class='time_label'>Minutes</span>";
-  // document.getElementById("second").innerHTML = seconds + " <span class='time_label'>Seconds</span>";
+  document.getElementById("days").innerHTML = days + " <span class='time_label'>Days</span>";
+  document.getElementById("hour").innerHTML =  hours + " <span class='time_label'>Hours</span>";
+  document.getElementById("minute").innerHTML = minutes + " <span class='time_label'>Minutes</span>";
+  document.getElementById("second").innerHTML = seconds + " <span class='time_label'>Seconds</span>";
 
   // If the count down is finished, write some text
   if (distance < 0) {
