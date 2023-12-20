@@ -56,75 +56,102 @@ $(document).ready(function(){
 //-------------------------- End Client Logo----------------------------
 
 
-  var counted = 0;
-  $(window).scroll(function() {
+  // var counted = 0;
+  // $(window).scroll(function() {
 
-    var oTop = $('#counter').offset().top - window.innerHeight;
-    if (counted == 0 && $(window).scrollTop() > oTop) {
-      $('.count').each(function() {
-        var $this = $(this),
-          countTo = $this.attr('data-count');
-        $({
-          countNum: $this.text()
-        }).animate({
-            countNum: countTo
-          },
+  //   var oTop = $('#counter').offset().top - window.innerHeight;
+  //   if (counted == 0 && $(window).scrollTop() > oTop) {
+  //     $('.count').each(function() {
+  //       var $this = $(this),
+  //         countTo = $this.attr('data-count');
+  //       $({
+  //         countNum: $this.text()
+  //       }).animate({
+  //           countNum: countTo
+  //         },
 
-          {
+  //         {
 
-            duration: 2000,
-            easing: 'swing',
-            step: function() {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function() {
-              $this.text(this.countNum);
-              //alert('finished');
-            }
+  //           duration: 2000,
+  //           easing: 'swing',
+  //           step: function() {
+  //             $this.text(Math.floor(this.countNum));
+  //           },
+  //           complete: function() {
+  //             $this.text(this.countNum);
+  //             //alert('finished');
+  //           }
 
-          });
-      });
-      counted = 1;
-    }
+  //         });
+  //     });
+  //     counted = 1;
+  //   }
 
-  });
+  // });
 
-
+  $(window).scroll(startCounter);
 
 })
 
+function startCounter() {
+  let scrollY = (window.pageYOffset || document.documentElement.scrollTop) + window.innerHeight;
+  let countdiv=document.getElementById('counter-container');
+  let divPos = countdiv.offsetTop;
+
+  if (scrollY > divPos) {
+    $(window).off("scroll", startCounter);
+
+    $('.count').each(function() {
+      var $this = $(this);
+      jQuery({
+        Counter: 0
+      }).animate({
+        Counter: $this.text().replace(/,/g, '')
+      }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function() {
+          $this.text(commaSeparateNumber(Math.floor(this.Counter)));
+        },
+        complete: function() {
+          $this.text(commaSeparateNumber(this.Counter));
+          //alert('finished');
+        }
+      });
+    });
+
+    function commaSeparateNumber(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  }
+}
+
 //-------------------------- Start CountDown Timer----------------------------
 
-// Set the date we're counting down to
-var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+$(function(){
+  var endDate = new Date("2023-12-31T23:59:59").getTime();
 
-// Update the count down every 1 second
-var x = setInterval(function() {
+  var countdown = setInterval(function() {
+    var dateTimeNow = new Date().getTime();
+    var remainingTime = endDate - dateTimeNow;
 
-  // Get today's date and time
-  var now = new Date().getTime();
+    var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
+    // $("#countdown").html(days + "days " + hours + "hrs " + minutes + "min " + seconds + "s");
+    $("#days").html( days + " <span class='time_label'>Days</span>");
+    $("#hour").html(  hours + " <span class='time_label'>Hours</span>");
+    $("#minute").html( minutes + " <span class='time_label'>Minutes</span>");
+    $("#second").html( seconds + " <span class='time_label'>Seconds</span>");
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Display the result in the element with id="demo"
-  document.getElementById("days").innerHTML = days + " <span class='time_label'>Days</span>";
-  document.getElementById("hour").innerHTML =  hours + " <span class='time_label'>Hours</span>";
-  document.getElementById("minute").innerHTML = minutes + " <span class='time_label'>Minutes</span>";
-  document.getElementById("second").innerHTML = seconds + " <span class='time_label'>Seconds</span>";
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
+    if (remainingTime < 0) {
+      clearInterval(countdown);
+      $("#countdown").html("Time is up!");
+    }
+  }, 1000);
+});
 
 //-------------------------- End CountDown Timer----------------------------
 
