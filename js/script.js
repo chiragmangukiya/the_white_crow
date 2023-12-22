@@ -27,7 +27,6 @@ $(document).ready(function(){
       items:1,
       animateIn:'animate__fadeIn',
       animateOut:'animate__fadeOut',
-      dotsData:true,
       touchDrag:false,
       mouseDrag:false
   })
@@ -51,6 +50,9 @@ $(document).ready(function(){
         }
       }
   })
+
+  var item_count=$('#testimonial .owl-dot').length;
+  $('#testimonial .owl-dots').before(`<div class='item_count_start'><span>01</span><span>${(item_count < 10) ? "0"+item_count : item_count}</span></div>`);
 
 
 //-------------------------- End Client Logo----------------------------

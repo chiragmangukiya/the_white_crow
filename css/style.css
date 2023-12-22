@@ -455,26 +455,18 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .why_choose_img{
     position: relative;
-    &::before{
-        content: '*';
-        position: absolute;
-        top: 27%;
-        left: 27px;
-        z-index: 1;
-        font-size: 150px;
-        color: white;
-        font-weight: bold;
-    }
-    &::after{
-        content: '*';
-        position: absolute;
-        top: -20%;
-        right: -20px;
-        z-index: 1;
-        font-size: 150px;
-        color: var(--themeOrange);
-        font-weight: bold;
-    }
+}
+.white_star{
+    position: absolute;
+    top: 27%;
+    left: 27px;
+    z-index: 1;
+}
+.orange_star{
+    position: absolute;
+    top: -20%;
+    right: -20px;
+    z-index: 1;
 }
     
 /* Discount */
@@ -614,9 +606,9 @@ h1,h2,h3,h4,h5,h6,p{
 #testimonial .owl-dots{
     margin: 0;
     position: absolute;
-    left: 42%;
-    bottom: -12px;
-    height: 270px;
+    left: 45%;
+    bottom: 5px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -624,38 +616,52 @@ h1,h2,h3,h4,h5,h6,p{
     &::before{
         content: '';
         width: 1px;
-        /* height: 100%; */
         background: rgba(255, 162, 142, 0.70);
         position: absolute;
-        top: 25px;
-        bottom: 25px;
-        left: 25px;
+        top: 0;
+        bottom: 0;
+        left: 0;
     }
-    
 }
 #testimonial .owl-dots .owl-dot{
     display: block;
-    position: relative;
-    
+    position: relative; 
 }
-#testimonial .owl-dots .owl-dot button{
-    /* background-color: var(--txtBlack); */
+#testimonial .owl-dots .owl-dot span{
+    height: 70px;
+    width: 5px;
+    background-color: transparent;
+    transition: .3s;
+    border-radius: 0;
+    margin: 0;
+}
+#testimonial .owl-dots .owl-dot.active span{
+    background-color: #FFA28E;
+}
+.item_count_start{
+    color: #E86A56;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    bottom: -23px;
+    left: 44.1%;
+    height: 303px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+/* #testimonial .owl-dots .owl-dot button{
     background-color: #fdebe5;
     border: none;
-    /* border-radius: 50%; */
-    /* height: 40px; */
-    /* width: 40px; */
     color: var(--themeOrange);
     margin-left: 7px;
     font-size: 20px;
     font-weight: bold;
 }
 #testimonial .owl-dots .owl-dot.active button{
-    /* display: none; */
     text-indent: 100px;
     white-space: nowrap;
     overflow: hidden;
-
     position: absolute;
     top: 50%;
     left: 18px;
@@ -674,7 +680,7 @@ h1,h2,h3,h4,h5,h6,p{
     top: auto;
     bottom: 9px;
     transform: translateY(0);
-}
+} */
 
 /* Client Logo */
 .logo_box{
