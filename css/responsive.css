@@ -273,16 +273,43 @@
         justify-content: flex-start;
         white-space: nowrap;
     }
+
+    .breadcrumb_tag{
+        font-size: 13px;
+        padding: 10px 0;
+        border-width: 5px;
+    }
+    .breadcrumb_logo{
+        background-color: transparent;
+        overflow: hidden;
+    }
+    .breadcrumb_logo img{
+        height: 70px;
+        width: 70px;
+    }
     .bread_title{
         top: 100px;
         left: 50%;
         translate: -50% 0;
+        width: 80%;
+        text-align: center;
     }
     .bread_title .breadcrumb
     {
         justify-content: center;
     }
-
+    .breadcrumbs{
+        background-position: center top;
+    }
+    .breadcrumb_lady{
+        left: 5%;
+        bottom: 140px;
+        width: 90%;
+    }
+    .breadcrumb_shirt {
+        top: 23%;
+        left: 6%;
+    }
     .title_dots{
         margin: 0 auto;
     }
@@ -299,8 +326,23 @@
     .about_content .about_text{
         margin-bottom: 50px;
     }
-    #counter .count.percent{
-        font-size: 45px;
+    #counter-container .count.percent{
+        font-size: 45px !important;
+        background: transparent;
+        background-clip: initial;
+        -webkit-text-fill-color: #E86A56;
+    }
+    .single_count{
+        padding-bottom: 30px;
+    }
+    .single_count::before{
+        background-image: linear-gradient(to right,#000, #E86A56, #000);
+        width: 30%;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        top: auto;
     }
     .about_center_img{
         padding: 0;
@@ -348,13 +390,21 @@
     .customize .sec_title h1{
         font-size: 30px;
     }
-    .customize_divider{
-        scale: 2;
-        padding-bottom: 50px;
+    .single_small{
+        width: 180px;
+        height: 80px;
+    }
+    .customize_small_img{
+        transform: translateX(-45%)
+    }
+    .personalize_img{
+        margin-bottom: 50px;
     }
     .all_map_location{
         text-align: center;
         margin-top: 0 !important;
+        background-image: none;
+        height: auto;
     }
     .location{
         position: static;
