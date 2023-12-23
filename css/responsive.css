@@ -156,7 +156,7 @@
         display: none;
     }
     .txt_box{
-        padding: 15px;
+        padding: 22px;
     }
     .news_submit{
         padding: 10px 15px;
@@ -228,7 +228,41 @@
     .client_circle img{
         width: 150px;
     }
+    #testimonial .owl-dots{
+        left: 50%;
+        top: 50px;
+        transform: translateX(-50%);
+        width: 60%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
     
+        &::before{
+            content: '';
+            height: 1px;
+            width: 100%;
+            top: 5px;
+            left: 0;
+        }
+    }
+    #testimonial .owl-dots .owl-dot{
+        display: inline-block;
+    }
+    #testimonial .owl-dots .owl-dot span{
+        height: 5px;
+        width: 60px;
+    }
+    .item_count_start{
+        bottom: -62px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
 
     /* category page */
 

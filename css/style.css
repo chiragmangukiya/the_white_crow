@@ -650,37 +650,7 @@ h1,h2,h3,h4,h5,h6,p{
     justify-content: space-between;
     flex-direction: column;
 }
-/* #testimonial .owl-dots .owl-dot button{
-    background-color: #fdebe5;
-    border: none;
-    color: var(--themeOrange);
-    margin-left: 7px;
-    font-size: 20px;
-    font-weight: bold;
-}
-#testimonial .owl-dots .owl-dot.active button{
-    text-indent: 100px;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 18px;
-    transform: translateY(-50%);
-    padding: 0;
-    height: 70px;
-    width: 5px;
-    background-color: #FFA28E;
-    transition: .3s;
-}
-#testimonial .owl-dots .owl-dot:nth-child(1).active button{
-    top: 9px;
-    transform: translateY(0);
-}
-#testimonial .owl-dots .owl-dot:nth-child(3).active button{
-    top: auto;
-    bottom: 9px;
-    transform: translateY(0);
-} */
+
 
 /* Client Logo */
 .logo_box{
