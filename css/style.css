@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
 
 /* jost-regular - latin */
 @font-face {
@@ -13,6 +13,19 @@
          url('../fonts/jost-v15-latin-regular.ttf') format('truetype'), 
          url('../fonts/jost-v15-latin-regular.svg#Jost') format('svg');
   }
+  /* jost-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/jost-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/jost-v15-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+        url('../fonts/jost-v15-latin-500.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+        url('../fonts/jost-v15-latin-500.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+        url('../fonts/jost-v15-latin-500.svg#Jost') format('svg'); /* Legacy iOS */
+}
   /* jost-600 - latin */
   @font-face {
     font-display: swap; 
@@ -119,6 +132,9 @@ h1,h2,h3,h4,h5,h6,p{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.fw-500{
+    font-weight: 500;
 }
 
 /* Start Header */
@@ -424,9 +440,9 @@ h1,h2,h3,h4,h5,h6,p{
 .why_choose .accordion-button{
     background-color: transparent !important;
     color: white;
-    padding: 20px 0;
+    padding: 22px 0;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 600 !important;
     text-transform: capitalize;
 }
 .why_choose .accordion-item{
@@ -440,6 +456,10 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0 0 16px;
     font-size: 14px;
     text-transform: capitalize;
+}
+.acc_item_count{
+    position: absolute;
+    left: -60px;
 }
 .accordion-button:focus{
     box-shadow: none;
@@ -477,7 +497,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 30px;
     font-family: var(--fontDown);
     font-weight: 900;
-
+    position: relative;
 }
 .time_label{
     margin: 10px;
@@ -490,7 +510,21 @@ h1,h2,h3,h4,h5,h6,p{
     font-family: var(--fontJost);
     font-weight: normal;
 }
-
+.hour {
+    background: linear-gradient(90deg, #1E1713 12.82%, #723930 107.69%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.minute{
+    background: linear-gradient(92deg, #64332B 5.02%, #E86A56 110.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.second{
+    color: #E86A56;
+}
 .discount_side_img{
     position: relative;
     left: -150px;
@@ -664,7 +698,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Newsletter */
 .input_element{
-    width: 50%;
+    width: 60%;
 }
 .txt_box{
     padding: 25px 50px 25px 30px;
@@ -677,7 +711,7 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 18px;
 }
 .news_submit{
-    background-color: white;
+    background-color: #FFFAF6;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -686,6 +720,7 @@ h1,h2,h3,h4,h5,h6,p{
     color: #E86A56;
     outline: none;
     font-size: 20px;
+    font-weight: 500;
     &:hover{
         background-color: var(--themeOrange);
         color: white;
@@ -708,6 +743,9 @@ footer{
     letter-spacing: 3px;
     &:hover, &.active{
         color: var(--themeOrange);
+    }
+    &:first-child{
+        padding-left: 0;
     }
 }
 .visit_store{
@@ -768,6 +806,7 @@ footer{
     letter-spacing: 2px;
     text-align: center;
     word-spacing: 10px;
+    font-weight: 500;
 }
 .info_title{
     font-family: var(--fontDown);

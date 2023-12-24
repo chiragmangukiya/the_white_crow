@@ -55,41 +55,12 @@ $(document).ready(function(){
   $('#testimonial .owl-dots').before(`<div class='item_count_start'><span>01</span><span>${(item_count < 10) ? "0"+item_count : item_count}</span></div>`);
 
 
+
+
 //-------------------------- End Client Logo----------------------------
 
 
-  // var counted = 0;
-  // $(window).scroll(function() {
-
-  //   var oTop = $('#counter').offset().top - window.innerHeight;
-  //   if (counted == 0 && $(window).scrollTop() > oTop) {
-  //     $('.count').each(function() {
-  //       var $this = $(this),
-  //         countTo = $this.attr('data-count');
-  //       $({
-  //         countNum: $this.text()
-  //       }).animate({
-  //           countNum: countTo
-  //         },
-
-  //         {
-
-  //           duration: 2000,
-  //           easing: 'swing',
-  //           step: function() {
-  //             $this.text(Math.floor(this.countNum));
-  //           },
-  //           complete: function() {
-  //             $this.text(this.countNum);
-  //             //alert('finished');
-  //           }
-
-  //         });
-  //     });
-  //     counted = 1;
-  //   }
-
-  // });
+  
 
   $(window).scroll(startCounter);
 
@@ -143,10 +114,10 @@ $(function(){
     var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
 
     // $("#countdown").html(days + "days " + hours + "hrs " + minutes + "min " + seconds + "s");
-    $("#days").html( days + " <span class='time_label'>Days</span>");
-    $("#hour").html(  hours + " <span class='time_label'>Hours</span>");
-    $("#minute").html( minutes + " <span class='time_label'>Minutes</span>");
-    $("#second").html( seconds + " <span class='time_label'>Seconds</span>");
+    $("#days").html( `<div class="days">${days}</div>` + " <span class='time_label'>Days</span>");
+    $("#hour").html(  `<div class="hour">${hours}</div>` + " <span class='time_label'>Hours</span>");
+    $("#minute").html( `<div class="minute">${minutes}</div>` + " <span class='time_label'>Minutes</span>");
+    $("#second").html( `<div class="second">${seconds}</div>` + " <span class='time_label'>Seconds</span>");
 
     if (remainingTime < 0) {
       clearInterval(countdown);
