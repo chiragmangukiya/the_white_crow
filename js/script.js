@@ -59,7 +59,13 @@ $(document).ready(function(){
 
 //-------------------------- End Client Logo----------------------------
 
+$(window).scroll(function(){
+  var sticky = $('.sticky'),
+      scroll = $(window).scrollTop();
 
+  if (scroll >= 80) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
   
 
   $(window).scroll(startCounter);
@@ -94,7 +100,7 @@ function startCounter() {
     });
 
     function commaSeparateNumber(num) {
-      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "");
     }
   }
 }

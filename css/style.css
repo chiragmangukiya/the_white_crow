@@ -139,6 +139,18 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Start Header */
 
+.fixed {
+    position: fixed;
+    top:0; 
+    left:0;
+    width: 100%; 
+    background-color: var(--themeBg);
+    z-index: 9999;
+    box-shadow: 0 7px 10px rgba(232, 106, 86, 0.1);
+}   
+header.sticky.fixed > .container{
+    border: none !important;
+}
 .side_icon a{
     background-color: #000;
     height: 45px;
@@ -736,6 +748,9 @@ footer{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.dark_footer{
+    border-radius: 5px;
+}
 .foot_menu a{
     text-transform: uppercase;
     color: white;
@@ -827,10 +842,14 @@ footer{
     border-bottom: 1px white solid;
 }
 .email_txt{
-    border: 1px var(--themeOrange) solid;
+    border-radius: 5px;
+    border: 1.5px solid #E8553E;
+    background: rgba(255, 255, 255, 0.60);
+    font-weight: 500;
 }
 .email_txt::placeholder{
-    color: var(--themeOrange);
+    letter-spacing: 0.64px;
+    color: rgba(232, 106, 86,0.9);
 }
 /* ----------------------------Categories page ---------------------------*/
 
@@ -858,18 +877,29 @@ footer{
     padding: 10px;
     background-color: white;
     border-radius: 10px;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+    /* justify-content: space-between; */
+    box-shadow: 0px 10px 49px 0px #FDE5DD;
+    gap: 2px;
+}
+.product_tab .nav-item{
+    text-align: center;
 }
 .product_tab .nav-link{
     color: #000;
     padding: 10px 20px;
     font-size: 21px;
-    /* width: 148px; */
+    display: block;
+    width: 100%;
 }
 .product_tab .nav-link.active{
     color: white;
-    border-radius: 5px;
     background: var(--2, linear-gradient(64deg, #E86A56 21.64%, #FF7E2E 94.6%));
+    border-radius: 5px;
+}
+.product_tab .nav-link:hover{
+    background-color: #f5f5f5;
 }
 .cate_single_pro{
     position: relative;
@@ -988,7 +1018,7 @@ footer{
 .single_count span{
     display: inline-block;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 500;
 }
 .single_count::before{
     content: '';
@@ -1012,11 +1042,13 @@ footer{
 #counter-container .count.percent{
     /* color: var(--themeOrange); */
     font-family: var(--fontDown);
-    font-weight: bold;
-    background: var(--2, linear-gradient(64deg, #E86A56 21.64%, #FF7E2E 94.6%));
+    background: linear-gradient(64deg, #E86A56 21.64%, #FF7E2E 94.6%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 10px 0;
 }
 #gallery .owl-stage .owl-stage-outer{
     height: 400px;
@@ -1266,6 +1298,11 @@ footer{
         box-shadow: none;
         background-color: transparent;
     }
+}
+.contact-btn{
+    padding: 14px 50px;
+    font-weight: 500;
+    font-size: 18px;
 }
 .close_note{
     padding: 15px;
